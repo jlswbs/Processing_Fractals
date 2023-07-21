@@ -1,7 +1,8 @@
 // IFS Twon dragon fractal //
 
   int m = 3;
-  float x=1,y=1,x1,y1;
+  float x = 1.0;
+  float y = 1.0;
   float[] a = new float[m];
   float[] b = new float[m];
   float r = sqrt(1.25 * m);
@@ -26,8 +27,8 @@ void draw() {
     
     int c = (int)random(m);
     float ra = sqrt(3.0 * (x * x + y * y));
-    x1 = -x / r + y / (ra * r) + a[c];
-    y1 = -x / (ra * r) - y / r + b[c];
+    float x1 = -x / r + y / (ra * r) + a[c];
+    float y1 = -x / (ra * r) - y / r + b[c];
     x = x1;
     y = y1;
     
